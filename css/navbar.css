@@ -1,0 +1,84 @@
+header, a, img, li{
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+}
+
+/* Basic layout */
+
+ul{
+  list-style-type: none;
+  float: right;
+  margin-right: -110px;
+}
+
+li{
+  display: inline;
+  float: left;
+}
+
+img.logo{
+  float: left;
+}
+
+
+nav{
+  width: 960px;
+  margin: 0 auto;
+}
+
+header{
+  background: white;
+  border-bottom: 1px solid white;
+  float: left;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+  header a{
+    color: #969696;
+    text-decoration: none;
+    font-family: 'Amaranth', sans-serif;
+    text-transform: uppercase;
+  }
+
+  header a.active, header a:hover{
+    color: #001781;
+  }
+
+  header li{
+    margin-right: 30px;
+  }
+
+  /* Sizes for the bigger menu */
+  header.large{
+    height: 157px;
+  }
+
+  header.large img{
+    width: 271px;
+    height: auto;
+  }
+
+  header.large li{
+    margin-top: 92px;
+
+  }
+
+
+  /* Sizes for the smaller menu */
+  header.small{
+    height: 50px;
+  }
+
+  header.small img{
+    width: 287px;
+    height: 69px;
+    margin-top: -10px;
+  }
+
+  header.small li{
+    margin-top: 17px;
+  }
